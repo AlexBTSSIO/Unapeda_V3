@@ -97,21 +97,16 @@ header ul li button{
   position: absolute;
   /* top: 14rem;
   right: 9rem; */
-  font-size: 2.4 rem;
-  width: 22rem;
-  height: 4rem;
+  font-size: 3rem;
+  width: 40rem;
+  height: 5.5rem;
 
 }
 header ul li button img{
     width: 50px;
     height: 40px;
 }
-/* header ul li:nth-child(4){
-    position: absolute;
-    top: 13rem;
-    right: 4rem;
-    font-size: 1.6 rem;
-} */
+
 header ul li{
     font-size: 3rem;
     border: none;
@@ -121,23 +116,23 @@ header ul li{
 header ul li:nth-child(4){
     position: absolute;
     top: 110px;
-    right: 9rem;
+    right: 4rem;
 }
 header ul li:nth-child(4) button{
     background-color: var(--color-logo9);
 }
 header ul li:nth-child(5){
     position: absolute;
-    top: 160px;
-    right: 9rem;
+    top: 180px;
+    right: 4rem;
 }
 header ul li:nth-child(5) button{
     background-color: var(--color-logo2);
 }
 header ul li:nth-child(6){
     position: absolute;
-    top: 210px;
-    right: 9rem;
+    top: 250px;
+    right: 4rem;
 }
 header ul li:nth-child(6) button{
     background-color: var(--color-logo3);
@@ -145,11 +140,28 @@ header ul li:nth-child(6) button{
 
 header ul li:nth-child(7){
     position: absolute;
-    top: 260px;
-    right: 9rem;
+    top: 320px;
+    right: 4rem;
 }
 header ul li:nth-child(7) button{
-    background-color: var(--color-logo4);
+    background-color: var(--color-logo2);
+}
+
+header ul li:nth-child(8){
+    position: absolute;
+    top: 390px;
+    right: 4rem;
+}
+header ul li:nth-child(8) button{
+    background-color: var(--color-logo8);
+}
+header ul li:nth-child(9){
+    position: absolute;
+    top: 460px;
+    right: 4rem;
+}
+header ul li:nth-child(9) button{
+    background-color: var(--color-logo9);
 }
 input[type=text] {
     height: 4rem;
@@ -183,7 +195,6 @@ nav ul{
     width: 100%;
     margin-left: 14rem;
     font-size: 0;
-    
 }
 
 nav ul li{
@@ -197,8 +208,7 @@ nav ul li button{
     text-align: center;
     line-height: 4rem;
     text-transform: uppercase;
-    font-size: bolder;
-    
+    font-size: bolder; 
 }
 /* nav button:hover{
     background-color: var(--color-hover);
@@ -260,20 +270,27 @@ nav ul li strong{
 /* main{
     background-color: var(--color-logo3);
 } */
+main h2{
+    text-align: center;
+    background-color: var(--color-logo2);
+    color: #fff;
+}
 main section{
     position:absolute;
     left: 35px;
 }
 main section p{
     text-align: left;
+    width: 500px;
 }
+
 main section img{
     position:absolute;
-    height: 140px;
-    width: 140px;
+    height: 160px;
+    width: 160px;
     border-radius: 1rem;
     left: 15rem;
-    top: 28rem;
+    top: 25rem;
     
 }
 figure{
@@ -295,7 +312,7 @@ figure figcaption{
     
 }
 
-figure figcaption h2{
+figure figcaption h3{
     font-size: 900;
     font-weight: bolder;
     margin-bottom: 2rem;
@@ -319,9 +336,11 @@ figure figcaption ul li{
 }
 
 figure img{
+    flex-shrink: 0;
      width: 260px;
      height: 260px;
      border-radius:1.5rem;
+     object-fit: initial;
   
 }
 main figure button{
@@ -355,18 +374,96 @@ footer ul li{
    
 }
 @media screen and (max-width:80rem){ /*responsive ecran vertical*/
-    nav ul{
-display: flex;
-flex-direction: column;
+
+    header img{
+        width: 100%;  
+        height: auto;
+       
     }
-    nav ul li a{
+    iframe{
+        width:100%;
+        /* height: auto; */
+        margin-left: 30px;
+    }
+    /* header ul li {
+        display: inline-block;
+        justify-content: center;
+        flex-direction: row;
+        position: relative;
+    } */
+    input[type=text] {
+        height: 4rem;
+        position: inherit;
+        font-size: 3rem;
+        width: 36rem;
+        margin-left: 8px;
+    } 
+    
+    header ul li button{
+        position: inherit;
+        margin: -2rem;
+        margin-left: 8px;
+        width: 36rem;
+        align-items: center;
+        height: 5rem;
+       
+    }
+    header ul li:nth-child(4){
+        position: inherit;
+
+    }
+  
+    header ul li:nth-child(5){
+        position: inherit;
+        
+    }
+  
+    header ul li:nth-child(6){
+        position: inherit;
+      
+    }
+  
+    
+    header ul li:nth-child(7){
+        position: inherit;
+       
+    }
+    
+    header ul li:nth-child(8){
+        position: inherit;
+      
+    }
+ 
+    header ul li:nth-child(9){
+        position: inherit;
+       
+    }
+   
+   nav{
+    z-index: -1;
+    margin:5rem auto;
+    position: inherit;
+   }
+    nav ul{
+display: inline-flex;
+flex-direction: column;
+text-align: center;
+margin-left: 6rem;
+
+    }
+    nav ul li {
         line-height: 3rem;
         text-align: left;
     }
+    nav ul li button{
+        width: 80rem;
+        text-align: left;
+    }
+   
 
     figure{
         display: block;
-        margin: 0;
+        margin:2rem auto;
         border-radius: 0rem;
     }
     figure img{
@@ -374,9 +471,24 @@ flex-direction: column;
         width: 100%;
         /* margin:auto 5rem; */
     }
+    main section{
+        position: inherit;
+        margin:auto 8px;
+    }
+    main section p{
+        width: 95%;
+    }
+    main section img{
+        position:inherit;
+        height: 160px;
+        width: 160px;
+        border-radius: 1rem;
+        margin: auto 10rem;
+        
+    }
     main figure button{
         position: relative;
-        margin: auto 6.6rem;
+        margin: auto 8.8rem;
     }
     footer{
         position: relative;
